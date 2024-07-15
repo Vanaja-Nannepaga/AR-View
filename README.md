@@ -1,14 +1,5 @@
-<<<<<<< HEAD
-
- #vanaja
-
-  Note: Please ensure you have installed <code><a href="https://nodejs.org/en/download/">nodejs</a></code>
-
-  To preview and run the project on your device:
+#Myntra-HackerRamp---InnovHer-Team
+ To preview and run the project on your device:
   1) Open project folder in <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
   2) In the terminal, run `npm install`
   3) Run `npm start` to view project in browser
-  
-=======
-# Myntra-HackerRamp---InnovHer-Team
->>>>>>> 12425861147d1a19d103f0bc82b42f318fab2418
