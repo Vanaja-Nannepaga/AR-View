@@ -14,7 +14,7 @@ const Movie1 = () => {
 
   return (
     <div className="w-full relative [background:linear-gradient(180deg,_rgba(255,_52,_222,_0.9)_8.35%,_rgba(254,_86,_15,_0.9)_92.17%)] h-[70.188rem] overflow-hidden text-left text-[2rem] text-gray-100 font-inter">
-      <i className="absolute top-[62.813rem] left-[31.5rem] font-ibm-plex-sans">
+      <i className="absolute top-[calc(50%_+_443.5px)] left-[calc(50%_-_169px)] font-ibm-plex-sans">
         Developed by ~InnovHer Team
       </i>
       <div className="absolute top-[0.875rem] left-[calc(50%_-_526px)] w-[65.438rem] h-[6.375rem] text-[0.75rem] text-black font-ibm-plex-sans">
@@ -61,32 +61,36 @@ const Movie1 = () => {
           Bag
         </div>
       </div>
-      <div className="absolute top-[15.375rem] left-[12.125rem] font-extrabold inline-block w-[50.5rem] h-[2.75rem]">
-        Rocky aur Rani Kii Prem Kahaani Movie Characters:
-      </div>
-      <div
-        className="absolute top-[22.625rem] left-[23rem] w-[15.938rem] h-[20.813rem] cursor-pointer"
-        onClick={onRanveerSinghContainerClick}
-      >
-        <b className="absolute top-[18.375rem] left-[1.125rem]">
-          Ranveer Singh
-        </b>
-        <img
-          className="absolute top-[0rem] left-[0rem] rounded-[50%] w-[15.938rem] h-[15.938rem] object-cover"
-          alt=""
-          src="/ellipse-10@2x.png"
-        />
-      </div>
-      <div
-        className="absolute top-[22.625rem] left-[50.938rem] w-[15.938rem] h-[20.313rem] cursor-pointer"
-        onClick={onAliaBhattContainerClick}
-      >
-        <b className="absolute top-[17.875rem] left-[3.25rem]">Alia Bhatt</b>
-        <img
-          className="absolute top-[0rem] left-[0rem] rounded-[50%] w-[15.938rem] h-[15.938rem] object-cover"
-          alt=""
-          src="/ellipse-71@2x.png"
-        />
+     <div className="absolute top-[calc(50%_-_315.5px)] left-[calc(50%_-_526px)] w-[54.75rem] h-[28.063rem] font-inter">
+        <div className="absolute top-[calc(50%_-_224.5px)] left-[calc(50%_-_438px)] font-extrabold inline-block w-[50.5rem] h-[2.75rem]">
+          Rocky aur Rani Kii Prem Kahaani Movie Characters:
+        </div>
+        <div
+          className="absolute top-[calc(50%_-_108.5px)] left-[calc(50%_-_264px)] w-[15.938rem] h-[20.813rem] cursor-pointer"
+          onClick={onRanveerSinghContainerClick}
+        >
+          <b className="absolute top-[calc(50%_+_127.5px)] left-[calc(50%_-_109.5px)]">
+            Ranveer Singh
+          </b>
+          <img
+            className="absolute top-[calc(50%_-_166.5px)] left-[calc(50%_-_127.5px)] rounded-[50%] w-[15.938rem] h-[15.938rem] object-cover"
+            alt=""
+            src="/ellipse-10@2x.png"
+          />
+        </div>
+        <div
+          className="absolute top-[calc(50%_-_108.5px)] left-[calc(50%_+_183px)] w-[15.938rem] h-[20.313rem] cursor-pointer"
+          onClick={onAliaBhattContainerClick}
+        >
+          <b className="absolute top-[calc(50%_+_123.5px)] left-[calc(50%_-_75.5px)]">
+            Alia Bhatt
+          </b>
+          <img
+            className="absolute top-[calc(50%_-_162.5px)] left-[calc(50%_-_127.5px)] rounded-[50%] w-[15.938rem] h-[15.938rem] object-cover"
+            alt=""
+            src="/ellipse-71@2x.png"
+          />
+        </div>
       </div>
     </div>
   );

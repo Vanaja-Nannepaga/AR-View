@@ -14,7 +14,7 @@ const Movie2 = () => {
 
   return (
     <div className="w-full relative [background:linear-gradient(180deg,_rgba(255,_52,_222,_0.9)_8.35%,_rgba(254,_86,_15,_0.9)_92.17%)] h-[70.188rem] overflow-hidden text-left text-[2rem] text-gray-100 font-inter">
-      <i className="absolute top-[62.813rem] left-[32rem] font-ibm-plex-sans">
+      <i className="absolute top-[calc(50%_+_443.5px)] left-[calc(50%_-_208px)] font-ibm-plex-sans">
         Developed by ~InnovHer Team
       </i>
       <div className="absolute top-[0.875rem] left-[calc(50%_-_526px)] w-[65.438rem] h-[6.375rem] text-[0.75rem] text-black font-ibm-plex-sans">
@@ -61,34 +61,36 @@ const Movie2 = () => {
           Bag
         </div>
       </div>
-      <div className="absolute top-[15.375rem] left-[13.688rem] font-extrabold inline-block w-[27.188rem] h-[3.875rem]">
-        Titanic Movie Characters:
-      </div>
-      <div
-        className="absolute top-[23rem] left-[22.5rem] w-[15.938rem] h-[22.5rem] cursor-pointer"
-        onClick={onKateWinsletContainerClick}
-      >
-        <b className="absolute top-[17.625rem] left-[2.438rem]">
-          <p className="m-0">Kate Winslet</p>
-        </b>
-        <img
-          className="absolute top-[0rem] left-[0rem] rounded-[50%] w-[15.938rem] h-[15.938rem] object-cover"
-          alt=""
-          src="/ellipse-62@2x.png"
-        />
-      </div>
-      <div
-        className="absolute top-[23rem] left-[50.188rem] w-[18.25rem] h-[20.063rem] cursor-pointer"
-        onClick={onLeonardoDiCaprioContainerClick}
-      >
-        <b className="absolute top-[17.625rem] left-[0rem]">
-          Leonardo DiCaprio
-        </b>
-        <img
-          className="absolute top-[0rem] left-[0.938rem] rounded-[50%] w-[15.938rem] h-[15.938rem] object-cover"
-          alt=""
-          src="/ellipse-72@2x.png"
-        />
+       <div className="absolute top-[calc(50%_-_315.5px)] left-[calc(50%_-_501px)] w-[54.75rem] h-[30.125rem] font-inter">
+        <div className="absolute top-[calc(50%_-_241px)] left-[calc(50%_-_438px)] font-extrabold inline-block w-[27.188rem] h-[3.875rem]">
+          Titanic Movie Characters:
+        </div>
+        <div
+          className="absolute top-[calc(50%_-_119px)] left-[calc(50%_-_297px)] w-[15.938rem] h-[22.5rem] cursor-pointer"
+          onClick={onKateWinsletContainerClick}
+        >
+          <b className="absolute top-[calc(50%_+_102px)] left-[calc(50%_-_88.5px)]">
+            <p className="m-0">Kate Winslet</p>
+          </b>
+          <img
+            className="absolute top-[calc(50%_-_180px)] left-[calc(50%_-_127.5px)] rounded-[50%] w-[15.938rem] h-[15.938rem] object-cover"
+            alt=""
+            src="/ellipse-62@2x.png"
+          />
+        </div>
+        <div
+          className="absolute top-[calc(50%_-_119px)] left-[calc(50%_+_146px)] w-[18.25rem] h-[20.063rem] cursor-pointer"
+          onClick={onLeonardoDiCaprioContainerClick}
+        >
+          <b className="absolute top-[calc(50%_+_121.5px)] left-[calc(50%_-_146px)]">
+            Leonardo DiCaprio
+          </b>
+          <img
+            className="absolute top-[calc(50%_-_160.5px)] left-[calc(50%_-_131px)] rounded-[50%] w-[15.938rem] h-[15.938rem] object-cover"
+            alt=""
+            src="/ellipse-72@2x.png"
+          />
+        </div>
       </div>
     </div>
   );

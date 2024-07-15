@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Decor</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* #ar-scene-container {
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+    #ar-scene {
+      width: 200px;
+      height: 200px;
+    } */
+  </style>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.3.2/aframe/build/aframe-ar-nft.js"></script>
+</head>
+<body>
+  <div id="selection-container" class="container">
+    <h1>Choose a Decor Item</h1>
+    <div class="items">
+      <img src="sofa.png" alt="Sofa" data-model="models/sofa/scene.gltf">
+      <img src="clock.png" alt="Clock" data-model="models/clock/scene.gltf">
+      <img src="dining.png" alt="Dining Table" data-model="models/dining/scene.gltf">
+    </div>
+    <button id="startAR">Start AR</button>
+  </div>
+
+  
+  <a-scene embedded arjs="sourceType: webcam;" style="display: none;" id="ar-scene">
+    <a-entity camera look-controls></a-entity>
+    <a-entity id="decorItem" position="5 0 0" scale="0.05 0.05 0.05"></a-entity>
+  </a-scene>
+
+  <script src="script.js"></script>
+</body>
+</html>

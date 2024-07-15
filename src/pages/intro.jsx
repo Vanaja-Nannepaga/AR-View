@@ -25,45 +25,45 @@ const Intro = () => {
         </i>
       </div>
       <div
-        className="absolute top-[21.313rem] left-[45.5rem] w-[27.188rem] h-[25.188rem] cursor-pointer font-inter"
+        className="absolute top-[calc(50%_-_171px)] left-[calc(50%_+_8px)] w-[27.188rem] h-[25.188rem] cursor-pointer font-inter"
         onClick={onARHomeDecorClick}
       >
         <img
-          className="absolute top-[0rem] left-[0rem] rounded-21xl w-[27.188rem] h-[21.188rem] object-cover"
+        className="absolute top-[calc(50%_-_201.5px)] left-[calc(50%_-_217.5px)] rounded-21xl w-[27.188rem] h-[21.188rem] object-cover"
           alt=""
           src="/rectangle-2@2x.png"
         />
-        <div className="absolute top-[22.75rem] left-[5.875rem] font-extrabold">{`AR Home Decor `}</div>
+        <div className="absolute top-[calc(50%_+_162.5px)] left-[calc(50%_-_123.5px)] font-extrabold">{`AR Home Decor `}</div>
         <img
-          className="absolute top-[0rem] left-[calc(50%_+_112.5px)] w-[5.313rem] h-[5.625rem] object-cover"
+          className="absolute top-[calc(50%_-_201.5px)] left-[calc(50%_+_112.5px)] w-[5.313rem] h-[5.625rem] object-cover"
           alt=""
           src="/logo@2x.png"
         />
       </div>
       <div
-        className="absolute top-[21.313rem] left-[17.375rem] w-[27.188rem] h-[25.188rem] cursor-pointer font-inter"
+         className="absolute top-[calc(50%_-_171px)] left-[calc(50%_-_442px)] w-[27.188rem] h-[25.188rem] cursor-pointer font-inter"
         onClick={onMovieCostumesContainerClick}
       >
         <img
-          className="absolute top-[0rem] left-[0rem] rounded-21xl w-[27.188rem] h-[21.188rem] object-cover"
+          className="absolute top-[calc(50%_-_201.5px)] left-[calc(50%_-_217.5px)] rounded-21xl w-[27.188rem] h-[21.188rem] object-cover"
           alt=""
           src="/rectangle-1@2x.png"
         />
-        <div className="absolute top-[22.75rem] left-[5.25rem] font-extrabold">
+      <div className="absolute top-[calc(50%_+_162.5px)] left-[calc(50%_-_133.5px)] font-extrabold">
           Movie Costumes
         </div>
         <img
-          className="absolute top-[14.438rem] left-[0rem] w-[16.313rem] h-[6.75rem] object-cover"
+          className="absolute top-[calc(50%_+_29.5px)] left-[calc(50%_-_217.5px)] w-[16.313rem] h-[6.75rem] object-cover"
           alt=""
           src="/barbiethemovielogoremovebgpreview-1@2x.png"
         />
         <img
-          className="absolute top-[0rem] left-[calc(50%_+_118.5px)] w-[5.313rem] h-[5.625rem] object-cover"
+          className="absolute top-[calc(50%_-_201.5px)] left-[calc(50%_+_118.5px)] w-[5.313rem] h-[5.625rem] object-cover"
           alt=""
           src="/logo@2x.png"
         />
       </div>
-      <i className="absolute top-[54.438rem] left-[31.5rem] text-gray-100">
+      <i className="absolute top-[calc(50%_+_359px)] left-[calc(50%_-_216px)] text-gray-100">
         Developed by ~InnovHer Team
       </i>
       <div className="absolute top-[0.875rem] left-[calc(50%_-_526px)] w-[65.438rem] h-[6.375rem] text-[0.75rem]">

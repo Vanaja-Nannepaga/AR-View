@@ -2,6 +2,11 @@ import React, { useState } from "react";
 
 const Char5 = () => {
   const [buttonStates, setButtonStates] = useState({});
+ 
+  const [imageStates, setImageStates] = useState({
+    image1: false,
+    image2: false,
+  });
 
   const handleAddToBagClick = (id) => {
     setButtonStates((prevState) => ({
@@ -10,45 +15,72 @@ const Char5 = () => {
     }));
   };
 
+  const handleImageClick = (id) => {
+    setImageStates((prevState) => ({
+      ...prevState,
+      [id]: !prevState[id],
+    }));
+  };
+ 
+   const [heartStates, setHeartStates] = useState({
+   button1: false,
+   button2: false,
+   });
+const handleHeartClick = (id) => {
+      setHeartStates((prevState) => ({
+      ...prevState,
+      [id]:!prevState[id],
+     }));
+
+  };
+
   const renderButton = (id) => (
-    <div
-      className="absolute top-[26.875rem] left-[2.875rem] w-[21.438rem] h-[3.875rem] cursor-pointer"
-      onClick={() => handleAddToBagClick(id)}
-    >
-      <img
-        className="absolute top-[0.063rem] left-[16.625rem] w-[4.813rem] h-[3.813rem] object-cover"
-        alt=""
-        src="/bookmark@2x.png"
-      />
-      <img
-        className="absolute top-[0rem] left-[12.375rem] w-[4.813rem] h-[3.813rem] object-cover"
-        alt=""
-        src="/component-42@2x.png"
-      />
-      <div className="absolute top-[0.063rem] left-[0rem] w-[12.188rem] h-[3.75rem]">
-        <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-mini bg-whitesmoke-100" />
-        <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] flex items-center justify-center font-semibold">
-          {buttonStates[id] ? (
-            <div className="flex items-center">
-              <span>Added</span>
-              <div className="ml-3 w-7 h-7 bg-black rounded-full flex items-center justify-center">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="white"
-                  className="w-5 h-6"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M20.292 5.707a1 1 0 00-1.414-1.414l-9 9a1 1 0 01-1.414 0l-3-3a1 1 0 00-1.414 1.414l3.707 3.707a3 3 0 004.242 0l9-9z"
-                    clipRule="evenodd"
-                  />
-                </svg>
+    <div className="relative">
+      <div
+        className="absolute top-[26.875rem] left-[2.875rem] w-[21.438rem] h-[3.875rem] cursor-pointer"
+      >
+        <img
+          className="absolute top-[0.063rem] left-[16.625rem] w-[4.813rem] h-[3.813rem] object-cover"
+          alt=""
+          src="/bookmark@2x.png"
+        />
+         <img
+          className="absolute top-[0rem] left-[12.375rem] w-[4.813rem] h-[3.813rem] object-cover"
+           alt="Heart"
+             src={heartStates[id]? "/heart@2x.png" : "/component-41@2x.png"}
+
+          onClick={() => handleHeartClick(id)}
+
+          style={{ cursor: 'pointer' }}
+        />
+        <div
+          className="absolute top-[0.063rem] left-[0rem] w-[12.188rem] h-[3.75rem] cursor-pointer"
+          onClick={() => handleAddToBagClick(id)}
+        >
+          <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-mini bg-whitesmoke-100" />
+          <div className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] flex items-center justify-center font-semibold">
+            {buttonStates[id] ? (
+              <div className="flex items-center">
+                <span>Added</span>
+                <div className="ml-3 w-7 h-7 bg-black rounded-full flex items-center justify-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="white"
+                    className="w-5 h-6"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M20.292 5.707a1 1 0 00-1.414-1.414l-9 9a1 1 0 01-1.414 0l-3-3a1 1 0 00-1.414 1.414l3.707 3.707a3 3 0 004.242 0l9-9z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
               </div>
-            </div>
-          ) : (
-            "Add to Bag"
-          )}
+            ) : (
+              "Add to Bag"
+            )}
+          </div>
         </div>
       </div>
     </div>
@@ -104,7 +136,7 @@ const Char5 = () => {
         </div>
       </div>
       <div className="absolute top-[11.063rem] left-[12.688rem] w-[60rem] h-[39.063rem] text-[1.875rem] font-inter">
-        <div className="absolute top-[0rem] left-[0rem] text-[2rem] font-extrabold text-gray-100 whitespace-pre-wrap inline-block w-[46.438rem] h-[3.563rem]">{`Kate Winslet Costumes & Accesories:`}</div>
+     <div className="absolute top-[0rem] left-[0rem] text-[2rem] font-extrabold text-gray-100 whitespace-pre-wrap inline-block w-[46.438rem] h-[3.563rem]">{`Kate Winslet Costumes & Accesories:`}</div>
         <div className="absolute top-[5.25rem] left-[4.563rem] w-[27.188rem] h-[33.813rem]">
           <div className="absolute top-[0rem] left-[0rem] w-[27.188rem] h-[33.813rem]">
             <div className="absolute top-[0rem] left-[0rem] rounded-6xl bg-gray-400 box-border w-[27.188rem] h-[33.813rem] border-[2px] border-solid border-black" />
@@ -114,7 +146,8 @@ const Char5 = () => {
             <img
               className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-21xl max-w-full overflow-hidden max-h-full object-cover"
               alt=""
-              src="/rectangle-593@2x.png"
+              src={imageStates.image1 ? "/rose_dress.png" : "/rectangle-593@2x.png"}
+              onClick={() => handleImageClick("image1")}
             />
             <img
               className="absolute h-[12.03%] w-[12.97%] top-[4.28%] right-[8.65%] bottom-[83.69%] left-[78.39%] max-w-full overflow-hidden max-h-full object-cover"
@@ -132,7 +165,9 @@ const Char5 = () => {
             <img
               className="absolute h-full w-full top-[0%] right-[0%] bottom-[0%] left-[0%] rounded-21xl max-w-full overflow-hidden max-h-full object-cover"
               alt=""
-              src="/rectangle-615@2x.png"
+              
+              src={imageStates.image2 ? "/rose_earrings.png" : "/rectangle-615@2x.png"}
+              onClick={() => handleImageClick("image2")}
             />
             <img
               className="absolute h-[12.03%] w-[12.97%] top-[4.28%] right-[5.48%] bottom-[83.69%] left-[81.56%] max-w-full overflow-hidden max-h-full object-cover"
