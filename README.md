@@ -1,7 +1,7 @@
-#Myntra Hackerramp 2024 - Innov Her Team
+# Myntra Hackerramp 2024 - Innov Her Team
 Welcome to the repository for our project developed during the Myntra Hackerramp 2024!
 
-##Overview
+## Overview
 Our project features two innovative components aimed at enhancing the shopping experience on Myntra:
 
 1. Movie Costume Feature
@@ -25,19 +25,19 @@ To set up the project locally, follow these steps:
 2. In the terminal, run npm install
 3. Run npm start to view project in browser
    
-##Usage
+## Usage
 
-###Movie Costume Feature:
+### Movie Costume Feature:
 
 1. Navigate to the "Movie Costumes" section on the website and go to fav movies or characters.
 2. Browse through the available costumes and accessories.
 3. Add your desired items to the cart and proceed with the purchase.
 
-###AR Home Decor Feature:
+### AR Home Decor Feature:
 
 1. Visit the "AR Home Decor" section.
 2. Select a decor item to view.
 3. Use the AR viewer to see how the item looks in your home environment.
 
-##License
+## License
 This project is licensed under the MIT License.
