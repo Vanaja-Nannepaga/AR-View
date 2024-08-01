@@ -18,15 +18,15 @@ Reimagine your living space with our augmented reality (AR) home decor feature. 
 
 ## Prerequisites:
 
-Node.js installed on your machine. You can download it from Node.js.
+Node.js installed on your machine. You can download it from [Node.js](https://nodejs.org/).
 
 ## Installation
 
 To set up the project locally, follow these steps:
 
 1. Clone the repository
-2. In the terminal, run npm install
-3. Run npm start to view project in browser
+2. In the terminal, run  `npm install`
+3. Run `npm start` to view project in browser
    
 ## Usage
 
@@ -42,5 +42,3 @@ To set up the project locally, follow these steps:
 2. Select a decor item to view.
 3. Use the AR viewer to see how the item looks in your home environment.
 
-## License
-This project is licensed under the MIT License.
