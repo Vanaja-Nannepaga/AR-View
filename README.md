@@ -10,7 +10,7 @@ Explore and purchase costumes and accessories inspired by your favorite movie ch
 2. AR Home Decor Feature
 Reimagine your living space with our augmented reality (AR) home decor feature. While shopping for home decor items, users can view how each item would look in their own home through an AR interface. This feature helps customers make more informed decisions by visualizing decor items in their actual space before purchasing.
 
-# Technology Stack:
+## Technology Stack:
 
 1. Frontend: HTML, CSS, JavaScript
 2. Frame Work: React Js
