@@ -16,10 +16,12 @@ Reimagine your living space with our augmented reality (AR) home decor feature. 
 2. Frame Work: React Js
 3. AR Integration: AR.js
 
-Prerequisites:
+## Prerequisites:
 
 Node.js installed on your machine. You can download it from Node.js.
-##Installation
+
+## Installation
+
 To set up the project locally, follow these steps:
 
 1. Clone the repository
